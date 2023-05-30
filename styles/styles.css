@@ -93,6 +93,9 @@ nav a:hover, nav [class*="fa-"]:hover {
   background-color: var(--magenta);
   padding: 0.5rem;
   border-radius: 5px;
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--mono);
 }
 
 .button:hover {
@@ -115,7 +118,9 @@ nav a:hover, nav [class*="fa-"]:hover {
 /* Intro styles */
 
 #intro {
-  padding-bottom: 10rem;
+  padding: 4rem 1rem 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #intro p {
@@ -138,6 +143,12 @@ nav a:hover, nav [class*="fa-"]:hover {
   font-size: 4rem;
 }
 
+/* Contact styles */
+
+.section-plum {
+  background-color: var(--plum);
+}
+
 #contact {
   width: 400px;
   text-align: center;
@@ -154,6 +165,7 @@ nav a:hover, nav [class*="fa-"]:hover {
 
 footer {
   text-align: center;
+  padding: 4rem 0;
 }
 
 footer ul {
