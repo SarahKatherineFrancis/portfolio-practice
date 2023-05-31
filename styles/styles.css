@@ -107,18 +107,6 @@ nav a:hover, nav [class*="fa-"]:hover {
   color: var(--white);
 }
 
-@media (min-width: 850px) {
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
-}
 /* Intro styles */
 
 #intro {
@@ -211,23 +199,6 @@ nav a:hover, nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
-
-@media (min-width:550px) {
-  article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .text {
-    order: 2;
-    text-align: right;
-  }
-
-  #projects ul {
-    justify-content: flex-end;
-  }
-}
 /* Contact styles */
 
 #contact {
@@ -258,4 +229,44 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   font-size: 3rem;
+}
+
+/* Media queries */
+
+@media (min-width:550px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  #projects img {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  .text {
+    order: 2;
+    text-align: right;
+    grid-column: 5/10;
+    grid-row: 1/2;
+    margin-top: 3.5rem;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
