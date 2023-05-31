@@ -154,6 +154,8 @@ nav a:hover, nav [class*="fa-"]:hover {
 
 #projects {
   padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #projects h2 {
@@ -250,7 +252,7 @@ footer ul {
     text-align: right;
     grid-column: 5/11;
     grid-row: 1/2;
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
   }
 
   .blackbox {
@@ -281,6 +283,7 @@ footer ul {
   nav {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem 0;
   }
 
   nav li:first-child {
