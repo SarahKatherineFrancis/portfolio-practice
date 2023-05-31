@@ -42,6 +42,10 @@ a:hover {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* Navbar styles */
 
 nav {
@@ -200,7 +204,6 @@ nav a:hover, nav [class*="fa-"]:hover {
 }
 
 #projects img {
-  width: 600px;
   border-radius: 25px;
   margin: 2rem 0 4rem;
   border-left: 1px solid var(--aqua);
@@ -208,6 +211,23 @@ nav a:hover, nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
+
+@media (min-width:550px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .text {
+    order: 2;
+    text-align: right;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
 /* Contact styles */
 
 #contact {
